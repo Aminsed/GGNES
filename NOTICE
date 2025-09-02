@@ -1,0 +1,21 @@
+GGNES - Graph Grammar Neuroevolution System
+Copyright (c) 2025 Amin Sedaghat
+All Rights Reserved.
+
+This software is licensed under a Non-Commercial License.
+Commercial use requires written permission from the copyright holder.
+
+For commercial licensing inquiries:
+- GitHub: https://github.com/Aminsed
+- Via GitHub Issues: https://github.com/Aminsed/GGNES/issues
+
+This product includes software developed by Amin Sedaghat.
+
+THIRD-PARTY COMPONENTS:
+This software uses the following open-source libraries:
+- PyTorch (BSD-style license)
+- NumPy (BSD license)
+- NetworkX (BSD license)
+- scikit-learn (BSD license)
+
+See requirements.txt for a complete list of dependencies.

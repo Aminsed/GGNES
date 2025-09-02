@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "genotype_uuid": "3f8a2b1c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+  "best_individual": {
+    "activation": "relu",
+    "learning_rate": 0.0036,
+    "hidden_size": 256,
+    "epochs": 6,
+    "architecture": {
+      "nodes": [
+        {"id": "input", "type": "INPUT", "output_size": 784},
+        {"id": "hidden1", "type": "HIDDEN", "output_size": 256, "activation": "relu"},
+        {"id": "hidden2", "type": "HIDDEN", "output_size": 128, "activation": "relu"},
+        {"id": "output", "type": "OUTPUT", "output_size": 10, "activation": "softmax"}
+      ],
+      "edges": [
+        {"from": "input", "to": "hidden1", "weight_init": 0.1},
+        {"from": "hidden1", "to": "hidden2", "weight_init": 0.1},
+        {"from": "hidden2", "to": "output", "weight_init": 0.1},
+        {"from": "input", "to": "output", "weight_init": 0.05, "skip": true}
+      ]
+    }
+  },
+  "evolution_history": {
+    "mutations_applied": ["layer_widening", "skip_connection", "activation_swap"],
+    "crossover_count": 127,
+    "selection_pressure": 0.5
+  }
+}

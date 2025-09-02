@@ -1,0 +1,20 @@
+[flake8]
+max-line-length = 160
+exclude = 
+    .git,
+    __pycache__,
+    .pytest_cache,
+    venv,
+    .venv,
+    build,
+    dist,
+    *.egg-info
+ignore = 
+    # W503: line break before binary operator (conflicts with Black)
+    W503,
+    # E203: whitespace before ':' (conflicts with Black)
+    E203,
+    # W391: blank line at end of file
+    W391,
+    # E226: missing whitespace around arithmetic operator (allow in tests)
+    E226

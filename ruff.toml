@@ -1,0 +1,24 @@
+# Ruff configuration
+line-length = 100
+target-version = "py311"
+
+[lint]
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "N",  # pep8-naming
+    "UP", # pyupgrade
+]
+ignore = [
+    "E501",  # line too long (handled by formatter)
+]
+
+[lint.per-file-ignores]
+"__init__.py" = ["F401"]  # unused imports in __init__.py files are ok
+"tests/test_scaffold.py" = ["I001"]  # import order is intentional in smoke test
+
+[format]
+quote-style = "double"
+indent-style = "space"

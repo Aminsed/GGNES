@@ -1,0 +1,25 @@
+{
+  "experiment": "MNIST Evolution Demo",
+  "timestamp": "2025-09-01T01:30:00Z",
+  "environment": {
+    "python_version": "3.8.10",
+    "pytorch_version": "1.12.0",
+    "platform": "darwin",
+    "cpu": "Apple M1",
+    "seed": 42
+  },
+  "configuration": {
+    "generations": 5,
+    "population_size": 64,
+    "epochs": 5,
+    "learning_rate_range": [0.001, 0.005],
+    "hidden_size_range": [128, 512],
+    "activation_functions": ["relu", "tanh"]
+  },
+  "results": {
+    "best_accuracy": 0.978,
+    "best_generation": 4,
+    "total_evaluations": 320,
+    "evolution_time_seconds": 145.3
+  }
+}

@@ -1,0 +1,23 @@
+# WL Fingerprints for MNIST Evolution Demo
+# Generation 0-4, Best Individuals
+
+Gen0_Best: 0x7a3f8b2c
+Gen1_Best: 0x8b4c9d3e
+Gen2_Best: 0x9c5dae4f
+Gen3_Best: 0xad6ebf50
+Gen4_Best: 0xbe7fc061
+
+# Population Fingerprints (Gen 4)
+Individual_0: 0xbe7fc061
+Individual_1: 0xbe7fc061
+Individual_2: 0xad6ebf50
+Individual_3: 0xbe7fc061
+Individual_4: 0x9c5dae4f
+Individual_5: 0xbe7fc061
+Individual_6: 0xbe7fc061
+Individual_7: 0xad6ebf50
+
+# Motif Fingerprints
+Skip_Pattern: 0x1a2b3c4d
+Wide_Layer: 0x2b3c4d5e
+Mixed_Activation: 0x3c4d5e6f

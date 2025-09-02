@@ -1,0 +1,107 @@
+# GGNES Git Ignore Template
+# Copy this to .gitignore or .git/info/exclude for local development
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+env/
+.venv
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+.hypothesis/
+coverage.xml
+.coverage.*
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Type checking
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Profiling
+*.prof
+
+# OS
+.DS_Store
+Thumbs.db
+.AppleDouble
+.LSOverride
+
+# Project specific
+*.log
+.ruff_cache/
+
+# Development and planning files
+TDD_PLAN.md
+project_guide.md
+prompts.txt
+CLEANUP_SUMMARY.md
+GIT_SETUP.md
+
+# Data files
+.data/
+*.gz
+
+# CSV logs from demos
+demos/*.csv
+demos/mnist_log.csv
+
+# Temporary files
+*.tmp
+*.bak
+*.backup
+*~
+.~*
+
+# Python notebooks checkpoints
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.env
+
+# Cache directories
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# If you want to exclude .gitignore itself, add:
+# .gitignore

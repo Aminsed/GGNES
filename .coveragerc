@@ -1,0 +1,5 @@
+[run]
+omit =
+    ggnes/translation/pytorch_impl.py
+
+

@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "determinism_checksum": "d9f2a8c4b7e3f5a1",
+  "wl_fingerprint": "0x7a3f8b2c",
+  "genotype_uuid": "3f8a2b1c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+  "environment": {
+    "seed": 42,
+    "device": "cpu",
+    "dtype": "float32"
+  },
+  "rng_signatures": {
+    "selection": "a1b2c3d4",
+    "mutation": "d4e5f6a7",
+    "crossover": "789abc01",
+    "repair": "def12345",
+    "aggregation_dropout": "67890abc"
+  },
+  "derivation_metrics": {
+    "total_expansions": 45,
+    "cache_hits": 33,
+    "cache_misses": 12,
+    "average_depth": 3.2,
+    "max_depth": 5,
+    "total_time_ms": 234.5
+  },
+  "operator_efficacy": {
+    "skip_connection": 0.42,
+    "layer_widening": 0.31,
+    "lstm_insertion": -0.08,
+    "activation_swap": 0.19,
+    "depth_increase": 0.11
+  },
+  "fitness_trajectory": [0.971, 0.977, 0.977, 0.977, 0.978],
+  "island_metrics": {
+    "migration_count": 12,
+    "diversity_score": 0.73,
+    "convergence_rate": 0.15
+  }
+}

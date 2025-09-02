@@ -1,0 +1,74 @@
+GGNES Non-Commercial License
+Version 1.0, September 2025
+
+Copyright (c) 2025 Amin Sedaghat
+
+TERMS AND CONDITIONS
+
+1. DEFINITIONS
+   "Software" refers to the GGNES (Graph Grammar Neuroevolution System) and all associated
+   documentation, source code, object code, and derivative works.
+   
+   "Non-Commercial Use" means use of the Software for research, educational, evaluation,
+   or personal purposes only, explicitly excluding any use that directly or indirectly
+   generates revenue, is part of a commercial service, or is used in a commercial product.
+
+   "Commercial Use" means any use of the Software that directly or indirectly generates
+   revenue, including but not limited to:
+   - Use in a commercial product or service
+   - Use by a commercial entity for internal business purposes
+   - Use in consulting or contract work
+   - Use in generating commercial research results
+
+2. GRANT OF LICENSE
+   Subject to the terms of this license, the copyright holder grants you a non-exclusive,
+   non-transferable, revocable license to use, copy, modify, and distribute the Software
+   for Non-Commercial Use only.
+
+3. RESTRICTIONS
+   a) Commercial Use is strictly prohibited without prior written permission from the
+      copyright holder. To obtain a commercial license, contact: aminsed@example.com
+   
+   b) You may not sublicense, sell, rent, lease, or lend the Software.
+   
+   c) You must retain all copyright notices and this license in all copies of the Software.
+   
+   d) Any distribution of the Software or derivative works must be under this same license.
+
+4. ACADEMIC AND RESEARCH USE
+   Academic institutions and research organizations may use the Software for non-commercial
+   research and educational purposes. Publications resulting from use of the Software must
+   cite:
+   
+   Sedaghat, A. (2025). GGNES: Graph Grammar Neuroevolution System.
+   GitHub: https://github.com/Aminsed/GGNES
+
+5. DERIVATIVE WORKS
+   You may create derivative works for Non-Commercial Use only. All derivative works must:
+   - Be clearly marked as modified versions
+   - Include prominent notice of the modifications
+   - Be distributed under this same license
+   - Not be used for Commercial Use without written permission
+
+6. DISCLAIMER OF WARRANTY
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+   INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+   PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE
+   LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+   TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE
+   USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+7. TERMINATION
+   This license automatically terminates if you violate any of its terms. Upon termination,
+   you must destroy all copies of the Software in your possession.
+
+8. COMMERCIAL LICENSING
+   For commercial use rights, please contact:
+   - Email: amin.sedaghat.ext@gmail.com
+   - GitHub: https://github.com/Aminsed
+
+
+
+---
+
+For questions about this license or commercial licensing options, contact the author.
