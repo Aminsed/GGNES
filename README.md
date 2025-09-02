@@ -3,7 +3,7 @@
 
 <div align="center">
 
-[![Tests](https://img.shields.io/badge/tests-598%20passing-success)](tests/)
+[![Tests](https://img.shields.io/badge/tests-603%20passing-success)](tests/)
 [![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)](htmlcov/)
 [![Python](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-Non--Commercial-orange)](LICENSE.md)
@@ -316,20 +316,25 @@ Result: +0.3% average fitness increase post-migration
 Real invariant enforcement example:
 
 ```python
+from ggnes.hierarchical.module_spec import ModuleSpec, ParameterSpec
+
 # ModuleSpec with invariant
 attention_spec = ModuleSpec(
     name="MultiHeadAttention",
-    params={"heads": 8, "head_dim": 64, "model_dim": 512},
-    invariant="heads * head_dim == model_dim"  # Enforced!
+    version=1,
+    parameters=[
+        ParameterSpec("heads", default=8),
+        ParameterSpec("head_dim", default=64),
+        ParameterSpec("model_dim", default=512),
+    ],
+    invariants=["heads * head_dim == model_dim"],  # Enforced!
 )
 
-# Violation caught at bind time:
-# Error: Invariant failed: 8 * 64 != 256
-# UUID: Deterministic error signature for debugging
+# Violation example (commented): model_dim=256 would fail the invariant
+# Raises ValidationError: Invariant failed: heads * head_dim == model_dim
 
-# After correction:
-# Success: Module bound with UUID 'a7f3b2c1-...'
-# Derivation checksum: '3d4e5f6a' (stable)
+# Successful bind
+bound = attention_spec.validate_and_bind_params({})
 ```
 
 ## Reproducibility Bundle
@@ -358,7 +363,7 @@ repro_bundle_20240115/
 ✓ WL fingerprint matches: 0x7a3f8b2c
 ✓ Determinism signature valid: d9f2a8c4b7e3
 ✓ Re-execution produces identical results
-✓ All 598 tests pass
+✓ All 603 tests pass
 ```
 
 ## Limitations & Scope
@@ -438,6 +443,10 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
+
+# Optional: install PyTorch and data deps for demos/translation
+# pip install torch torchvision
+# or minimal fallback: pip install numpy scikit-learn
 ```
 
 ### Quick Example
